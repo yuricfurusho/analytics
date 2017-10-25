@@ -199,6 +199,8 @@ public class MainActivity extends AppCompatActivity {
             params.putString("image_name", name);
             params.putString("full_text", text);
             mFirebaseAnalytics.logEvent("share_image", params);
+            mFirebaseAnalytics.logEvent("evento_yuri_bundle_null", null);
+            mFirebaseAnalytics.logEvent("evento_yuri_new_bundle", new Bundle());
             // [END custom_event]
         }
         return false;
